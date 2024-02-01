@@ -60,7 +60,28 @@ nav{
     text-align: center;
 }
 
+/* end benefits */
 
 
+
+/* end about-us */
+
+.get-started{
+    background-color: var(--resp-bg);
+    text-align: center;
+}
+
+
+
+/* end get-started */
 
 /* #endregion main */
+
+/* #region footer */
+
+footer{
+    background-color: var(--resp-dark);
+    color: white;
+}
+
+/* #endregion footer */
