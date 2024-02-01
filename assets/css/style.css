@@ -1,0 +1,29 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --resp-primary: rgba(0, 135, 255, 1);
+    --resp-bg: rgba(152, 146, 234, 1);
+    --resp-card: rgba(170, 223, 255, 1);
+    --resp-fred: rgba(253, 186, 92, 1);
+    --resp-dark: rgba(51, 51, 51, 1);
+}
+
+.container{
+    padding: 1.5rem;
+}
+
+/* #region header */
+nav{
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--resp-primary);
+    color: white;
+}
+
+
+
+/* #endregion header */
