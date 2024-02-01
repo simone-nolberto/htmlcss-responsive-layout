@@ -1,11 +1,11 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: "roboto";
 }
 
-:root{
+:root {
     --resp-primary: rgba(0, 135, 255, 1);
     --resp-bg: rgba(152, 146, 234, 1);
     --resp-card: rgba(170, 223, 255, 1);
@@ -13,12 +13,13 @@
     --resp-dark: rgba(51, 51, 51, 1);
 }
 
-.container{
-    padding: 1.5rem;
+.container {
+    padding: 1rem;
 }
 
+
 /* #region header */
-nav{
+nav {
     display: flex;
     justify-content: space-between;
     background-color: var(--resp-primary);
@@ -28,12 +29,13 @@ nav{
 /* #endregion header */
 
 /* #region main */
-.col-12{
+.col-12 {
     width: 100%;
     min-height: 300px;
     border: 1px dashed;
 }
-.card{
+
+.card {
     width: 90%;
     min-height: 280px;
     margin: auto;
@@ -43,19 +45,19 @@ nav{
 }
 
 /* end demo */
-.planning{
+.planning {
     background-color: var(--resp-bg);
 
 }
 
 /* end planning */
-.testimonials{
+.testimonials {
     text-align: center;
 }
 
 /* end testimonials */
 
-.benefits{
+.benefits {
     background-color: var(--resp-bg);
     text-align: center;
 }
@@ -66,7 +68,7 @@ nav{
 
 /* end about-us */
 
-.get-started{
+.get-started {
     background-color: var(--resp-bg);
     text-align: center;
 }
@@ -79,9 +81,31 @@ nav{
 
 /* #region footer */
 
-footer{
+footer {
     background-color: var(--resp-dark);
     color: white;
 }
 
 /* #endregion footer */
+
+
+/* #media query */
+@media screen and (min-width: 768px) {
+
+    .col-4 {
+        width: calc((100% / 12) * 4);
+    }
+
+    .col-8 {
+        width: calc((100% / 12) * 8);
+    }
+
+    .col-6 {
+        width: calc((100% / 12) * 6);
+    }
+
+}
+
+
+
+/* #endmedia query */
