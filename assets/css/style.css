@@ -17,6 +17,10 @@
     padding: 1rem;
 }
 
+.row{
+    width: 100%;
+}
+
 
 /* #region header */
 nav {
