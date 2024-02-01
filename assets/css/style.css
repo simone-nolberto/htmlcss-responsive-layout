@@ -145,6 +145,15 @@ footer {
         width: 70%;
         margin: auto;
     }
+
+    .planning .row{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .col-6{
+        width: calc((100% / 12) * 6);
+    }
 }
 
 
