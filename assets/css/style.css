@@ -23,6 +23,7 @@
 
 
 /* #region header */
+
 nav {
     background-color: var(--resp-primary);
 }
@@ -30,9 +31,34 @@ nav {
 nav>.container {
     display: flex;
     justify-content: space-between;
-
+    align-items: center;
     color: white;
 }
+
+.alternative-right{
+    display: none;
+    
+
+    & > ul{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        list-style: none;
+        gap: 1.5rem;
+    }
+
+    & a{
+        text-decoration: none;
+        color: white;
+    }
+
+    & .start{
+        background-color: white;
+        border-radius: 5rem;
+        padding: 0.5rem;
+    }
+}
+
 
 /* #endregion header */
 
@@ -144,6 +170,14 @@ footer {
     .container {
         width: 70%;
         margin: auto;
+    }
+
+    .right{
+        display: none;
+    }
+
+    .alternative-right{
+        display: block;
     }
 
     .planning .row{
