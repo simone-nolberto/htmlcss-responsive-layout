@@ -17,22 +17,27 @@
     padding: 1rem;
 }
 
-.row{
+.row {
     width: 100%;
 }
 
 
 /* #region header */
 nav {
+    background-color: var(--resp-primary);
+}
+
+nav>.container {
     display: flex;
     justify-content: space-between;
-    background-color: var(--resp-primary);
+
     color: white;
 }
 
 /* #endregion header */
 
 /* #region main */
+
 .col-12 {
     width: 100%;
     min-height: 300px;
@@ -40,7 +45,7 @@ nav {
 }
 
 .card {
-    width: 90%;
+    width: 100%;
     min-height: 280px;
     margin: auto;
     border: 1px solid;
@@ -68,6 +73,9 @@ nav {
 
 /* end benefits */
 
+.about-us{
+    text-align: center;
+}
 
 
 /* end about-us */
@@ -88,13 +96,29 @@ nav {
 footer {
     background-color: var(--resp-dark);
     color: white;
+    text-align: center;
 }
 
 /* #endregion footer */
 
 
-/* #media query */
+/* #region media query */
 @media screen and (min-width: 768px) {
+
+    .demo .row {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .benefits .row {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .about-us .row {
+        display: flex;
+        flex-wrap: wrap;
+    }
 
     .col-4 {
         width: calc((100% / 12) * 4);
@@ -110,6 +134,19 @@ footer {
 
 }
 
+@media screen and (min-width: 992px) {
+    .col-4 {
+        width: calc((100% / 12) * 4);
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .container {
+        width: 70%;
+        margin: auto;
+    }
+}
 
 
-/* #endmedia query */
+
+/* #endregion media query */
