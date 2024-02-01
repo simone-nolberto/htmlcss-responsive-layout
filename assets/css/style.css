@@ -38,10 +38,27 @@ nav{
     min-height: 280px;
     margin: auto;
     border: 1px solid;
+    border-radius: 1rem;
     background-color: var(--resp-card);
 }
 
 /* end demo */
+.planning{
+    background-color: var(--resp-bg);
+
+}
+
+/* end planning */
+.testimonials{
+    text-align: center;
+}
+
+/* end testimonials */
+
+.benefits{
+    background-color: var(--resp-bg);
+    text-align: center;
+}
 
 
 
