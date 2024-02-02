@@ -35,11 +35,11 @@ nav>.container {
     color: white;
 }
 
-.alternative-right{
+.alternative-right {
     display: none;
-    
 
-    & > ul{
+
+    &>ul {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -47,12 +47,12 @@ nav>.container {
         gap: 1.5rem;
     }
 
-    & a{
+    & a {
         text-decoration: none;
         color: white;
     }
 
-    & .start{
+    & .start {
         background-color: white;
         border-radius: 5rem;
         padding: 0.5rem;
@@ -76,7 +76,22 @@ nav>.container {
     margin: auto;
     border: 1px solid;
     border-radius: 1rem;
+    text-align: center;
+}
+
+/* end common */
+.demo .card {
     background-color: var(--resp-card);
+    padding: 1rem;
+}
+
+.demo .logo {
+    color: var(--resp-primary);
+    font-size: 5rem;
+}
+
+.demo h4 {
+    color: var(--resp-primary);
 }
 
 /* end demo */
@@ -90,16 +105,58 @@ nav>.container {
     text-align: center;
 }
 
-/* end testimonials */
+.testimonials .card{
+    background-color: var(--resp-bg);
+    color: white;
+}
+
+.testimonials h2 {
+    color: var(--resp-bg);
+}
 
 .benefits {
     background-color: var(--resp-bg);
     text-align: center;
 }
 
+.testimonials img {
+    width: 150px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+}
+
+/* end testimonials */
+
+.benefits h3{
+    color: white;
+}
+
+.benefits .card{
+    background-color: white;
+    text-align: start;
+
+    & > h2{
+        color: var(--resp-bg);
+    }
+
+    & > h4{
+        color: var(--resp-bg);
+    }
+
+    &>a{
+        text-decoration: none;
+        color: white;
+        background-color: var(--resp-bg);
+        border-radius: 1rem;
+        padding: 0.25rem 2rem;
+    }
+
+}
+
+
 /* end benefits */
 
-.about-us{
+.about-us {
     text-align: center;
 }
 
@@ -176,20 +233,20 @@ footer {
         margin: auto;
     }
 
-    .right{
+    .right {
         display: none;
     }
 
-    .alternative-right{
+    .alternative-right {
         display: block;
     }
 
-    .planning .row{
+    .planning .row {
         display: flex;
         flex-wrap: wrap;
     }
 
-    .col-6{
+    .col-6 {
         width: calc((100% / 12) * 6);
     }
 }
