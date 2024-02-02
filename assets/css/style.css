@@ -117,7 +117,7 @@ nav>.container {
     background-color: var(--resp-bg);
 }
 
-.second{
+.second {
     display: flex;
     flex-direction: column;
     gap: 1rem;
@@ -283,7 +283,7 @@ nav>.container {
     margin: auto;
 }
 
-.get-started h2{
+.get-started h2 {
     font-size: 2rem;
 }
 
@@ -300,7 +300,7 @@ footer {
     text-align: center;
 }
 
-footer a{
+footer a {
     color: var(--resp-bg);
 }
 
@@ -315,7 +315,7 @@ footer a{
         flex-wrap: wrap;
     }
 
-    .demo .card{
+    .demo .card {
         height: 100%;
     }
 
