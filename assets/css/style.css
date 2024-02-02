@@ -71,8 +71,7 @@ nav>.container {
 .card {
     width: 100%;
     min-height: 280px;
-    margin: 1rem 0;
-
+    margin: 1rem auto;
     border-radius: 1rem;
     text-align: center;
 }
@@ -115,6 +114,13 @@ nav>.container {
 /* end demo */
 .planning {
     background-color: var(--resp-bg);
+}
+
+.second{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 0.5rem 1rem;
 }
 
 .planning a {
@@ -302,6 +308,7 @@ footer a{
     .demo .row {
         display: flex;
         flex-wrap: wrap;
+        margin: 0 --1rem;
     }
 
     .benefits .row {
