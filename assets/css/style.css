@@ -105,9 +105,16 @@ nav>.container {
     text-align: center;
 }
 
-.testimonials .card{
+.testimonials .card {
     background-color: var(--resp-bg);
     color: white;
+    padding: 0.75rem;
+
+    &>.text {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+    }
 }
 
 .testimonials h2 {
@@ -120,32 +127,32 @@ nav>.container {
 }
 
 .testimonials img {
-    width: 200px;
+    width: 150px;
     aspect-ratio: 1;
     border-radius: 50%;
 }
 
 /* end testimonials */
 
-.benefits h3{
+.benefits h3 {
     color: white;
 }
 
-.benefits .card{
+.benefits .card {
     background-color: white;
     text-align: start;
     padding: 1.5rem;
     line-height: 2rem;
 
-    & > h2{
+    &>h2 {
         color: var(--resp-bg);
     }
 
-    & > h4{
+    &>h4 {
         color: var(--resp-bg);
     }
 
-    &>a{
+    &>a {
         text-decoration: none;
         color: white;
         background-color: var(--resp-bg);
@@ -159,22 +166,35 @@ nav>.container {
 /* end benefits */
 
 
-.about-us h3{
+.about-us h3 {
     color: var(--resp-bg);
 }
 
-.about-us img{
-    width: 200px;
+.photo-block{
+    position: relative;
+    width: 250px;
+    margin: auto;
+
+    & > i{
+        position: absolute;
+        top: 0;
+        right: 0.25rem;
+        font-size: 4.5rem;
+        color: var(--resp-bg);
+    }
+}
+
+.about-us img {
+    width: 150px;
     aspect-ratio: 1;
     border-radius: 50%;
-    position: relative;
 }
 
-.about-us h4{
+.about-us h4 {
     color: var(--resp-bg);
 }
 
-.about-us a{
+.about-us a {
     color: white;
     text-decoration: none;
     background-color: var(--resp-bg);
@@ -239,6 +259,7 @@ footer {
 }
 
 @media screen and (min-width: 992px) {
+
     .col-md-4 {
         width: calc((100% / 12) * 4);
     }
@@ -246,6 +267,29 @@ footer {
     .col-md-8 {
         width: calc((100% / 12) * 8);
     }
+
+    .testimonials .card {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+
+        &>.text {
+            text-align: start;
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+        }
+
+        &>img{
+            width: 200px;
+        }
+
+        .about-us img{
+            width: 200px;
+        }
+    }
+
+    
 }
 
 @media screen and (min-width: 1200px) {
