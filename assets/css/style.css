@@ -71,7 +71,6 @@ nav>.container {
 
 .card {
     width: 100%;
-    min-height: 280px;
     border-radius: 1rem;
     text-align: center;
 }
@@ -356,7 +355,7 @@ footer a {
     .testimonials .card {
         display: flex;
         align-items: center;
-        gap: 1rem;
+        gap: 3rem;
 
         &>.text {
             text-align: start;
@@ -365,15 +364,20 @@ footer a {
             gap: 1.5rem;
         }
 
-        &>img {
-            width: 200px;
-        }
-
-        .about-us img {
+        img {
             width: 200px;
         }
     }
 
+    .about-us img {
+        width: 200px;
+    }
+
+    .about-us .text{
+        line-height: 3rem;
+        padding: 2rem;
+        gap: 3rem;
+    }
 
 }
 
