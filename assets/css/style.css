@@ -147,7 +147,7 @@ nav>.container {
     gap: 1rem;
 }
 
-.testimonials .container{
+.testimonials .container {
     display: flex;
     flex-direction: column;
     gap: 2rem;
@@ -185,7 +185,7 @@ nav>.container {
     text-align: center;
 }
 
-.benefits .container{
+.benefits .container {
     display: flex;
     flex-direction: column;
     gap: 2rem;
@@ -417,6 +417,25 @@ footer a {
     .planning .row {
         display: flex;
         flex-wrap: wrap;
+    }
+
+    .planning .second {
+        align-self: flex-end;
+        height: 300px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        &>img {
+            width: 50%;
+            height: auto;
+            aspect-ratio: 1;
+        }
+
+        &>p {
+            width: 70%;
+        }
     }
 
     .col-6 {
